@@ -1,15 +1,22 @@
-:root{
+:root {
     --szin-bg: #250902;
     --szin-betu: beige;
     --szin-aktiv: #640D14;
     --szin-gomb: #AD2831;
 }
+
 * {
     box-sizing: border-box;
 }
+
+html {
+    scrollbar-gutter: stable;
+}
+
 body {
     background-color: white;
 }
+
 main {
     max-width: 220px;
     text-align: center;
@@ -21,9 +28,11 @@ main {
     padding: 15px;
     border-radius: 10px;
 }
-header{
+
+header {
     color: var(--szin-betu);
 }
+
 article {
     display: grid;
     grid-template-areas:
@@ -32,10 +41,11 @@ article {
     grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
 }
+
 .kijelzo {
     display: block;
     grid-area: kij;
-    border: 1px solid gray;
+    border: 1px solid grey;
     border-radius: 8px;
     height: 35px;
     text-align: left;
@@ -48,26 +58,30 @@ article {
     background-color: #02010A;
     color: var(--szin-betu);
 }
+
 .szamok {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
 }
+
 .szamok button {
     flex: 0 1 30%;
 }
 
-.szam:hover{
+.szam:hover {
     background-color: var(--szin-aktiv);
 }
+
 .muvjelek {
     grid-area: muv;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
+
 .muvjelek button {
     width: 30px;
     background-color: var(--szin-gomb);
@@ -78,12 +92,13 @@ article {
     background-color: var(--szin-aktiv);
 }
 
-button{
+button {
     border-radius: 9999px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
     border: none;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 footer {
