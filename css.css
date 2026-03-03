@@ -27,6 +27,7 @@ main {
     box-shadow: 0px 0px 5px grey;
     padding: 15px;
     border-radius: 10px;
+    border: 2px solid var(--szin-betu) !important;
 }
 
 header {
@@ -96,6 +97,15 @@ button {
     border-radius: 9999px;
     box-shadow: 0 0 5px grey;
     border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+footer {
+    font-size: xx-small;
+    color: grey;
+}    border: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
